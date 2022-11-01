@@ -8,8 +8,14 @@
   box-sizing: border-box;
 }
 
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
 h3 {
-  font-size: 24px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 img {
@@ -34,42 +40,46 @@ a {
 body {
   display: grid;
   grid-template-columns: 350px 1fr;
-  gap: 24px;
-  padding: 20px;
+  padding: 40px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .card {
   background-color: var(--bg-cards);
   border-radius: 20px;
   padding: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .user {
   text-align: center;
+  padding-bottom: 39px;
 }
 
 .user img{
-  width: 130px;
+  width: 128px;
   border-radius: 50%;
-  border: 3px solid forestgreen;
+  border: 2px solid #00FF00;
 }
 
 .user p {
   margin-top: 20px;
   margin-bottom: 10px;
-  font-size: 20px;
+  font-size: 23px;
+  font-weight: bold;
 }
 
 .user span {
-  font-size: 12px;
+  font-size: 13px;
+  margin-bottom: 80px;
 }
 
 .information li {
   list-style: none;
   display: flex;
   margin-bottom: 20px;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .information li:last-child {
@@ -88,24 +98,30 @@ body {
 .tecnologies {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 5px;
+  gap: 15px;
   margin-top: 20px;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 .tecnologies a{
   display: block;
   background-color: var(--bg-techs);
-  font-size: .75rem;
-  border-radius: 20px;
-  text-align: center;
+  border-radius: 12px;
   padding: 5px;
+  width: 86px;
+  height: 24px;
+  font-size: 10px;
   color: black;
   font-weight: 700;
+  text-align: center;
+}
+
+.tecnologies a:hover {
+  background-color: #cb92b181;
 }
 
 main {
-  padding-left: 20px;
+  padding-left: 60px;
 }
 .header {
   display: flex;
@@ -113,10 +129,14 @@ main {
   justify-content: space-between;
 }
 
+header a {
+  font-size: 14px;
+}
+
 .projects {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 5px;
+  gap: 30px;
 }
 
 .project {
@@ -126,6 +146,8 @@ main {
 
 .project-tittle a{
   margin-left: 10px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .fa-code-branch{
@@ -133,8 +155,12 @@ main {
 }
 
 .project-description {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 22px;
+  padding-bottom: 30px;
+}
+
+.project-description p{
+  font-size: 14px;
 }
 
 .avaliation {
@@ -145,39 +171,45 @@ main {
 .avaliation>span::before {
  content: '';
  display: inline-block;
- width: .875rem;
- height: .875rem;
+ width: 15px;
+ height: 15px;
  background: yellow;
+ border: 2px solid var(--text-color);
  border-radius: 50%;
+ box-sizing: border-box;
  margin-right: 5px;
 }
 
+.avaliation {
+  font-size: 14px;
+}
+
 .picture {
-  width: 130px;
-  margin-right: 10px;
+  width: 128px;
+  margin-right: 20px;
 }
 
 .picture img {
-  border-radius: 20px;
+  border-radius: 50%;
 }
 
 .post {
   display: flex;
 }
 
-.post-description {
-  margin-top: 15px;
-}
+
 
 .post-title span {
   display: block;
   margin-top: 10px;
-  font-size: .875rem;
+
+  font-size: 14px;
 }
 
 .post-description p{
-  margin-top: 25px;
-  margin-bottom: 5px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 16px;
 }
 
 .post-tec-list {
@@ -187,6 +219,8 @@ main {
 
 .post-tec-list li {
   margin-right: 10px;
+  font-size: 14px;
+  margin-bottom: 12px;
 }
 
 
